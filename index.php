@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Chat x Victor</title>
+    <title>Chat NodeJS + Socket.io + PHP + Predis</title>
     <style>
     #comments {
         height: 300px;

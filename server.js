@@ -1,15 +1,6 @@
 var RedisStore = require('socket.io/lib/stores/redis')
   , redis  = require('socket.io/node_modules/redis')
-  //, redis       = require('redis')
-  //, express     = require('express')
-  //, store       = new express.session.MemoryStore()
-  //, app         = express(
-  //     express.bodyParser(),
-  //      express.static(__dirname + '/public'),
-  //      express.cookieParser(),
-  //      express.session({ secret: 'htuayreve', store: store}))
   , http        = require('http')
-  //, server      = http.createServer(app)
   , server      = http.createServer()
   , sio         = require('socket.io');
 
@@ -47,7 +38,6 @@ io.sockets.on('connection', function (socket) {
                 io.sockets.in(channel).json.send(json);
             });
             subscriber[channel_name].subscribe(channel_name, function (channel) {
-                //subscriber[channel_name].publish(channel, 'Hola');
             });
         }
 
