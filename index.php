@@ -37,7 +37,7 @@
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="moment.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
     <script src='http://127.0.0.1:8888/socket.io/socket.io.js'></script>
     <script type="text/javascript">
     $(document).ready(function () {
