@@ -1,0 +1,5 @@
+.DS_Store
+/predis-*
+/redis
+/Predis
+/node_modules
