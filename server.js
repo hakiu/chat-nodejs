@@ -19,10 +19,9 @@ var subscriber  = []
   , client = redis.createClient();
 
 
-//server.listen(8888, '192.168.10.128',  function () {
-server.listen(8888, '190.54.13.7',  function () {
+server.listen(8888, '127.0.0.1',  function () {
     var addr = server.address();
-    console.log('app listening on http://' + addr.address + ':' + addr.port);
+    console.log('app escuchando en http://' + addr.address + ':' + addr.port);
 });
 
 var io = sio.listen(server);

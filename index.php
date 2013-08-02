@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Chat by Vctor</title>
+    <title>Chat x Victor</title>
     <style>
     #comments {
         height: 300px;
@@ -32,20 +32,18 @@
     <div id="comments">
         <div class="comment">
             <div class="from">Victor San Martin @ 22:34</div>
-            <div class="message">Hola Keweneros!</div>
+            <div class="message">Hola Mundo!</div>
         </div>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="moment.min.js"></script>
-    <!-- <script src='http://192.168.10.128:8888/socket.io/socket.io.js'></script> -->
-    <script src='http://190.54.13.7:8888/socket.io/socket.io.js'></script>
+    <script src='http://127.0.0.1:8888/socket.io/socket.io.js'></script>
     <script type="text/javascript">
     $(document).ready(function () {
         var channel = '<?php echo (!empty($_GET['c']) ? $_GET['c'] : 'default'); ?>';
 
-        //var socket = io.connect('http://192.168.10.128:8888');
-        var socket = io.connect('http://190.54.13.7:8888');
+        var socket = io.connect('http://127.0.0.1:8888');
         socket.on('connect', function () {
             socket.emit('channel', channel, function (data) {
                 //console.log(data);
