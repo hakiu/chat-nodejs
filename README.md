@@ -9,3 +9,11 @@ Redis http://redis.io/
 Predis https://github.com/nrk/predis
 
 Socket.io http://socket.io/
+
+
+Modo de Uso
+-----------
+
+Ingresa a http://localhost/
+
+Si quieres crear canal http://localhost/?c=NOMBRE-CANAL
