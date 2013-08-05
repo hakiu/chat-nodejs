@@ -7,7 +7,7 @@ Predis\Autoloader::register();
 
 $redis = new Predis\Client();
 $obj = array(
-	'timestamp' => time(),
+	'created' => time(),
     'name'      => $_POST['name'],
     'message'   => nl2br(strip_tags($_POST['message'])),
     'channel'   => $_POST['channel'],

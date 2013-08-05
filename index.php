@@ -51,7 +51,7 @@
         socket.on('message', function (json) {
             var m = $.parseJSON(json);
             message = '<div class="comment"> \
-                <div class="from">' + m.name + ' @ ' + moment(m.timestamp).format('h:mm') + '</div> \
+                <div class="from">' + m.name + ' @ ' + moment(m.created).format('h:mm') + '</div> \
                 <div class="message">' + m.message + '</div> \
             </div>';
             $('#comments').prepend(message);
