@@ -45,9 +45,7 @@
 
         var socket = io.connect('http://127.0.0.1:8888');
         socket.on('connect', function () {
-            socket.emit('channel', channel, function (data) {
-                //console.log(data);
-            });
+            socket.emit('channel', channel);
         });
 
         socket.on('message', function (json) {
